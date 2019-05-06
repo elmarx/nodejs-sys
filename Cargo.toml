@@ -1,6 +1,6 @@
 [package]
 name = "nodejs-sys"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Elmar Athmer <elmar@athmer.org>"]
 edition = "2018"
 build = "build.rs"
