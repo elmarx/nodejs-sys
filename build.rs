@@ -1,4 +1,5 @@
 use bindgen::Builder;
+use bindgen::EnumVariation;
 use std::env;
 use std::path::PathBuf;
 
@@ -24,6 +25,7 @@ fn main() {
         .header("node/src/node_api.h")
         .whitelist_function("napi_.*")
         .whitelist_type("napi_.*")
+        .default_enum_style(EnumVariation::Rust)
         .generate()
         .expect("Unable to generate bindings");
 
