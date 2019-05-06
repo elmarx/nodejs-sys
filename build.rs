@@ -4,7 +4,6 @@ use std::path::PathBuf;
 
 trait ExtendedBuilder {
     fn set_experimental(self) -> Self;
-    fn set_include(self) -> Self;
 }
 
 impl ExtendedBuilder for Builder {
@@ -15,22 +14,14 @@ impl ExtendedBuilder for Builder {
             self
         }
     }
-
-    fn set_include(self) -> Builder {
-        match option_env!("NODE_INCLUDE") {
-            Some(node_include_path) => self.clang_arg(format!("-I{}", node_include_path)),
-            None => self,
-        }
-    }
 }
 
 fn main() {
     // taken from https://rust-lang.github.io/rust-bindgen/tutorial-3.html
     // allow to set the location of node_api.h
     let bindings = bindgen::Builder::default()
-        .set_include()
         .set_experimental()
-        .header("wrapper.h")
+        .header("node/src/node_api.h")
         .whitelist_function("napi_.*")
         .whitelist_type("napi_.*")
         .generate()

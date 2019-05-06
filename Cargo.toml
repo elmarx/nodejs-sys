@@ -8,6 +8,14 @@ categories = ["external-ffi-bindings"]
 repository = "https://github.com/zauberpony/nodejs-sys"
 license = "MIT"
 description = "Native bindings to the nodejs' n-api"
+include = [
+    "node/src/node_api.h",
+    "node/src/js_native_api.h",
+    "node/src/js_native_api_types.h",
+    "node/src/node_api_types.h",
+    "**/*.rs",
+    "Cargo.toml",
+]
 
 [dependencies]
 
