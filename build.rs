@@ -25,7 +25,7 @@ fn main() {
         .header("node/src/node_api.h")
         .whitelist_function("napi_.*")
         .whitelist_type("napi_.*")
-        .default_enum_style(EnumVariation::Rust)
+        .default_enum_style(EnumVariation::Rust { non_exhaustive: false })
         .generate()
         .expect("Unable to generate bindings");
 
