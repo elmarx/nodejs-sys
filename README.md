@@ -8,9 +8,9 @@ Requirements
 
 To build this create you need `libclang`, since bindings are being generated at build-time (by [bindgen](https://docs.rs/bindgen/)).
 
-The experimental N-API features may be enabled via usual cargo/rust feature-flags.
+The experimental N-API features may be enabled via usual cargo feature flag "experimental".
 
 Stability
 =========
 
-This crate is probably already done/stable, the real work is a to provide a wrapper crate with nice rust bindingsj
+This crate is probably already done/stable, the real work is a to provide a wrapper crate with nice rust bindings.
