@@ -1,7 +1,7 @@
 nodejs-sys
 ----------
 
-Bindings for NodeJS' [N-API](https://nodejs.org/dist/latest-v12.x/docs/api/n-api.html).
+Bindings for NodeJS' [N-API](https://nodejs.org/dist/latest-v13.x/docs/api/n-api.html).
 
 Requirements
 ============
