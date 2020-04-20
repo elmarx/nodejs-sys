@@ -5,12 +5,23 @@ use std::path::PathBuf;
 
 trait ExtendedBuilder {
     fn set_experimental(self) -> Self;
+    fn set_napi_version(self) -> Self;
 }
 
 impl ExtendedBuilder for Builder {
     fn set_experimental(self) -> Builder {
         if cfg!(feature = "experimental") {
             self.clang_arg("-D NAPI_EXPERIMENTAL")
+        } else {
+            self
+        }
+    }
+
+    fn set_napi_version(self) -> Builder {
+        if cfg!(feature = "napi_v6") {
+            self.clang_arg("-D NAPI_VERSION=6")
+        } else if cfg!(feature = "napi_v5") {
+            self.clang_arg("-D NAPI_VERSION=5")
         } else {
             self
         }
@@ -22,10 +33,13 @@ fn main() {
     // allow to set the location of node_api.h
     let bindings = bindgen::Builder::default()
         .set_experimental()
+        .set_napi_version()
         .header("node/src/node_api.h")
         .whitelist_function("napi_.*")
         .whitelist_type("napi_.*")
-        .default_enum_style(EnumVariation::Rust { non_exhaustive: false })
+        .default_enum_style(EnumVariation::Rust {
+            non_exhaustive: false,
+        })
         .generate()
         .expect("Unable to generate bindings");
 

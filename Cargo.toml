@@ -28,3 +28,7 @@ default = []
 
 # enable the experimental API https://nodejs.org/dist/latest-v12.x/docs/api/n-api.html#n_api_usage
 experimental = []
+
+# select API version of supported versions
+napi_v5 = []
+napi_v6 = []
