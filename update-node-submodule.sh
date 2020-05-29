@@ -19,8 +19,22 @@ if [ -z "$CHANGED_FILES" ]; then
   echo "Relevant files did not change between $CURRENT_VERSION..$MOST_RECENT_VERSION"
   exit 0
 else
-  echo "changed files:"
-  echo "$CHANGED_FILES"
+  IFS="
+  "
+
+  CHANGELOG=$(mktemp)
+  echo "# Node ${MOST_RECENT_VERSION}\n" >> $CHANGELOG
+  echo "affected files:" >> $CHANGELOG
+  for i in $CHANGED_FILES; do
+    echo "* [$i](https://github.com/nodejs/node/blob/$MOST_RECENT_VERSION/$i)" >> $CHANGELOG
+  done
+
+  echo "\nupstream changelog:" >> $CHANGELOG
+  for i in "$(git log --format='[%h](https://github.com/nodejs/node/commit/%H) %s' "$CURRENT_VERSION".."$MOST_RECENT_VERSION" src/node_api.h src/js_native_api.h src/js_native_api_types.h src/node_api_types.h)"; do
+    echo "* $i" >> $CHANGELOG
+  done
+
+  echo "" >> $CHANGELOG
 fi
 
 git checkout "$MOST_RECENT_VERSION"
@@ -32,4 +46,6 @@ fi
 
 # back to src-root
 cd ..
-git commit -m "update node $CURRENT_VERSION -> $MOST_RECENT_VERSION" node
+cat CHANGELOG.md >> $CHANGELOG
+cat $CHANGELOG > CHANGELOG.md
+git commit -m "update node $CURRENT_VERSION -> $MOST_RECENT_VERSION" node CHANGELOG.md
