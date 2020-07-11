@@ -5,6 +5,7 @@ authors = ["Elmar Athmer <elmar@athmer.org>"]
 edition = "2018"
 build = "build.rs"
 categories = ["external-ffi-bindings"]
+keywords = ["ffi", "node", "nodejs", "napi", "n-api"]
 repository = "https://github.com/zauberpony/nodejs-sys"
 license = "MIT"
 description = "Native bindings to the nodejs' n-api"
