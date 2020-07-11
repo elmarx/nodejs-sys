@@ -48,4 +48,4 @@ fi
 cd ..
 cat CHANGELOG.md >> $CHANGELOG
 cat $CHANGELOG > CHANGELOG.md
-git commit -m "update node $CURRENT_VERSION -> $MOST_RECENT_VERSION" node CHANGELOG.md
+git commit -m ":arrow_up: update node $CURRENT_VERSION -> $MOST_RECENT_VERSION" node CHANGELOG.md
