@@ -19,9 +19,6 @@ if [ -z "$CHANGED_FILES" ]; then
   echo "Relevant files did not change between $CURRENT_VERSION..$MOST_RECENT_VERSION"
   exit 0
 else
-  IFS="
-  "
-
   CHANGELOG=$(mktemp)
   echo "# Node ${MOST_RECENT_VERSION}\n" >> $CHANGELOG
   echo "affected files:" >> $CHANGELOG
@@ -30,12 +27,18 @@ else
   done
 
   echo "\nupstream changelog:" >> $CHANGELOG
-  for i in "$(git log --format='[%h](https://github.com/nodejs/node/commit/%H) %s' "$CURRENT_VERSION".."$MOST_RECENT_VERSION" src/node_api.h src/js_native_api.h src/js_native_api_types.h src/node_api_types.h)"; do
-    echo "* $i" >> $CHANGELOG
+  # get a list of (space-separated) commit-ids we can easily loop over
+  for i in $(git log --format='%H' "$CURRENT_VERSION".."$MOST_RECENT_VERSION" src/node_api.h src/js_native_api.h src/js_native_api_types.h src/node_api_types.h); do
+    # now get the actual text of the commit (which contains multiple spaces)
+    echo "* $(git log -1 --format='[%h](https://github.com/nodejs/node/commit/%H) %s' $i)" >> $CHANGELOG
   done
 
   echo "" >> $CHANGELOG
 fi
+
+# for dry run mode:
+# cat $CHANGELOG
+# exit 0;
 
 git checkout "$MOST_RECENT_VERSION"
 
