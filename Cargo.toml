@@ -17,6 +17,7 @@ include = [
     "**/*.rs",
     "Cargo.toml",
 ]
+readme = "README.md"
 
 [dependencies]
 
