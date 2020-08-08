@@ -40,6 +40,7 @@ fn main() {
         .default_enum_style(EnumVariation::Rust {
             non_exhaustive: false,
         })
+        .size_t_is_usize(true)
         .generate()
         .expect("Unable to generate bindings");
 
