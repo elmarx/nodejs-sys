@@ -1,3 +1,12 @@
+# v0.6.0 breaking change — `size_t` is now `usize`
+
+`bindgen` switched the default output for parameters with the `size_t` C type to `u32`/`u64` depending on the target platform. 
+Per [rust-lang/rust-bindgen#1671](https://github.com/rust-lang/rust-bindgen/issues/1671), the old behaviour where 
+`size_t` would just output `usize` is not _technically_ correct, because the C standard has a slightly different definition for `size_t`.
+
+It should be correct for all platforms that Node.js supports though. bindgen added a toggle to opt back in to the old behaviour. 
+Since bindgen had been doing this for years without issue, I think we're safe. 
+
 # Node v14.8.0
 
 affected files:
