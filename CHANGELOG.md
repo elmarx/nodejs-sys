@@ -1,3 +1,15 @@
+# Node v14.8.0
+
+affected files:
+* [src/js_native_api.h](https://github.com/nodejs/node/blob/v14.8.0/src/js_native_api.h)
+* [src/js_native_api_types.h](https://github.com/nodejs/node/blob/v14.8.0/src/js_native_api_types.h)
+* [src/node_api.h](https://github.com/nodejs/node/blob/v14.8.0/src/node_api.h)
+* [src/node_api_types.h](https://github.com/nodejs/node/blob/v14.8.0/src/node_api_types.h)
+
+upstream changelog:
+* [8630f34776](https://github.com/nodejs/node/commit/8630f3477697835719df93dbc49d03f60cdf2b31) n-api,src: provide asynchronous cleanup hooks
+* [8cc9e5eb52](https://github.com/nodejs/node/commit/8cc9e5eb52dbbff49a594c2c8c07032d0b8f6d98) n-api: support type-tagging objects
+
 # Node v14.5.0
 
 affected files:
