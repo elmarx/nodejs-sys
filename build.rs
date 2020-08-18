@@ -40,6 +40,8 @@ fn main() {
         .default_enum_style(EnumVariation::Rust {
             non_exhaustive: false,
         })
+        .bitfield_enum("napi_key_filter")
+        .bitfield_enum("napi_property_attributes")
         .size_t_is_usize(true)
         .generate()
         .expect("Unable to generate bindings");
