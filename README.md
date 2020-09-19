@@ -10,7 +10,7 @@ Requirements
 
 This crate needs `llvm` at build-time, since it generates bindings at build-time (by using [bindgen](https://docs.rs/bindgen/)).
 
-For Debian/Ubuntu that's a simple `apt install llvm`.
+For Debian/Ubuntu that's a simple `apt install llvm libclang-dev`.
 
 Features
 ========
