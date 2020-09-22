@@ -1,3 +1,13 @@
+# v0.7.0 `key_filter` and `property_attributes` are now bitfields
+
+These enums are supposed to be combined using `|`, but the "rustified"
+enum configuration doesn't allow it. Bindgen has a bitfield enum style
+which _does_ allow `|`-ing values.
+
+N-API currently includes two enums used as bitfields:
+[`napi_key_filter`](https://nodejs.org/api/n-api.html#n_api_napi_key_filter) and 
+[`napi_property_attributes`](https://nodejs.org/api/n-api.html#n_api_napi_property_attributes).
+
 # Node v14.11.0
 
 affected files:
