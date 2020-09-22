@@ -1,3 +1,12 @@
+# Node v14.11.0
+
+affected files:
+* [src/node_api.h](https://github.com/nodejs/node/blob/v14.11.0/src/node_api.h)
+* [src/node_api_types.h](https://github.com/nodejs/node/blob/v14.11.0/src/node_api_types.h)
+
+upstream changelog:
+* [3c32fe09e9](https://github.com/nodejs/node/commit/3c32fe09e9354479a2527bdd7484d6efab39f864) n-api: re-implement async env cleanup hooks
+
 # v0.6.0 breaking change — `size_t` is now `usize`
 
 `bindgen` switched the default output for parameters with the `size_t` C type to `u32`/`u64` depending on the target platform. 
