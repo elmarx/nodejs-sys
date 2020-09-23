@@ -1,3 +1,13 @@
+# Node v14.12.0
+
+affected files:
+* [src/js_native_api.h](https://github.com/nodejs/node/blob/v14.12.0/src/js_native_api.h)
+* [src/js_native_api_types.h](https://github.com/nodejs/node/blob/v14.12.0/src/js_native_api_types.h)
+
+upstream changelog:
+* [ca1181615e](https://github.com/nodejs/node/commit/ca1181615e961ec948587aa6f8b7e46efd7cbd71) n-api: create N-API version 7
+* [7f3b2b2a1f](https://github.com/nodejs/node/commit/7f3b2b2a1f2b2fa25adf9c4ea261f2a99ddd74aa) n-api: add more property defaults
+
 # v0.7.0 `key_filter` and `property_attributes` are now bitfields
 
 These enums are supposed to be combined using `|`, but the "rustified"
