@@ -1,3 +1,11 @@
+# Node v14.13.0
+
+affected files:
+* [src/node_api.h](https://github.com/nodejs/node/blob/v14.13.0/src/node_api.h)
+
+upstream changelog:
+* [0d8eaa3942](https://github.com/nodejs/node/commit/0d8eaa3942f289874ed8c5d2a9468ba9c9ec45c8) src: allow N-API addon in `AddLinkedBinding()`
+
 # v0.8.0 N-API version 7
 
 Node.js v 14.12.0 [introduced N-API version 7](https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V14.md#14.12.0). 
