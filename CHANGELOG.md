@@ -1,3 +1,11 @@
+# Node v14.14.0
+
+affected files:
+* [src/js_native_api.h](https://github.com/nodejs/node/blob/v14.14.0/src/js_native_api.h)
+
+upstream changelog:
+* [c995242068](https://github.com/nodejs/node/commit/c995242068f364292bf90c6f5a5fa6bda662896d) n-api: support for object freeze/seal
+
 # Node v14.13.0
 
 affected files:
