@@ -1,3 +1,23 @@
+# Node v15.0.1
+
+affected files:
+* [src/js_native_api.h](https://github.com/nodejs/node/blob/v15.0.1/src/js_native_api.h)
+
+upstream changelog:
+* [19f14517c7](https://github.com/nodejs/node/commit/19f14517c7637b0e277b4fc3fdfe4473e5cc1262) n-api: support for object freeze/seal
+* [ff38165820](https://github.com/nodejs/node/commit/ff38165820da2a9eaddabbce23f3e75aa502900b) src: allow N-API addon in `AddLinkedBinding()`
+* [31b3202d59](https://github.com/nodejs/node/commit/31b3202d5902e7fa105949758677ea09643d8c5f) n-api: create N-API version 7
+* [c9506a8f3e](https://github.com/nodejs/node/commit/c9506a8f3e9bc5c679151feb39198023154464ab) n-api: add more property defaults
+* [0848f56cb3](https://github.com/nodejs/node/commit/0848f56cb39432090cdb99af9b8541fbc1a2849c) n-api: re-implement async env cleanup hooks
+* [22cbbcf9d9](https://github.com/nodejs/node/commit/22cbbcf9d9374d4b663bf1409f292212fa57623a) n-api,src: provide asynchronous cleanup hooks
+* [cc7ec889e8](https://github.com/nodejs/node/commit/cc7ec889e863433c248bc4b5c8e33f61ccc40f29) n-api: support type-tagging objects
+* [b327d335ff](https://github.com/nodejs/node/commit/b327d335ff6bc48c3c2aaedccfa9c40522f6b32f) n-api: add version to wasm registration
+* [b4ede54a7d](https://github.com/nodejs/node/commit/b4ede54a7d235cfe58265b2b8c455298698460a8) napi: add __wasm32__ guards
+* [b18d8dde84](https://github.com/nodejs/node/commit/b18d8dde847e1bff188c6cfb2d65a96209146c2c) Revert "n-api: detect deadlocks in thread-safe function"
+* [d26ca06c16](https://github.com/nodejs/node/commit/d26ca06c16f497ffa5ac4845a27922d5058a9318) n-api: detect deadlocks in thread-safe function
+* [d3d5eca657](https://github.com/nodejs/node/commit/d3d5eca657474f25fab47036fef9469efc211d8a) Revert "n-api: detect deadlocks in thread-safe function"
+* [aeb7084fe6](https://github.com/nodejs/node/commit/aeb7084fe6446350ec032e9819746126811bf44f) n-api: detect deadlocks in thread-safe function
+
 # Node v14.14.0
 
 affected files:
