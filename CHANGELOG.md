@@ -1,3 +1,11 @@
+# Node v15.9.0
+
+affected files:
+* [src/node_api.h](https://github.com/nodejs/node/blob/v15.9.0/src/node_api.h)
+
+upstream changelog:
+* [061939d2f6](https://github.com/nodejs/node/commit/061939d2f6fbc86ee854481dbfa0aa762a2f591f) node-api: allow retrieval of add-on file name
+
 # Node v15.0.1
 
 affected files:
