@@ -1,3 +1,14 @@
+# Node v15.12.0
+
+affected files:
+* [src/js_native_api.h](https://github.com/nodejs/node/blob/v15.12.0/src/js_native_api.h)
+* [src/js_native_api_types.h](https://github.com/nodejs/node/blob/v15.12.0/src/js_native_api_types.h)
+* [src/node_api.h](https://github.com/nodejs/node/blob/v15.12.0/src/node_api.h)
+* [src/node_api_types.h](https://github.com/nodejs/node/blob/v15.12.0/src/node_api_types.h)
+
+upstream changelog:
+* [a86334fbb9](https://github.com/nodejs/node/commit/a86334fbb92e3776d0055563f49fad4a0f728554) node-api: define version 8
+
 # Node v15.9.0
 
 affected files:
