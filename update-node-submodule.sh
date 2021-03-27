@@ -42,7 +42,7 @@ fi
 
 git checkout "$MOST_RECENT_VERSION"
 
-if ! grep "NAPI_VERSION  7" src/node_version.h; then
+if ! grep "NAPI_VERSION  8" src/node_version.h; then
   echo "Detected new NAPI_VERSION. Refusing to auto-update. Please add feature-flag etc."
   exit 1
 fi

@@ -18,7 +18,10 @@ impl ExtendedBuilder for Builder {
     }
 
     fn set_napi_version(self) -> Builder {
-        if cfg!(feature = "napi_v7") {
+        if cfg!(feature = "napi_v8") {
+            self.clang_arg("-D NAPI_VERSION=8")
+        }
+        else if cfg!(feature = "napi_v7") {
             self.clang_arg("-D NAPI_VERSION=7")
         } else if cfg!(feature = "napi_v6") {
             self.clang_arg("-D NAPI_VERSION=6")

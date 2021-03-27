@@ -19,7 +19,8 @@ Different API versions may be selected via feature-flag. See the [N-API Version 
 
 - `napi_v5` supported by all [actively maintained](https://nodejs.org/en/about/releases/) NodeJS releases
 - `napi_v6` supported by all [actively maintained](https://nodejs.org/en/about/releases/) NodeJS releases
-- `napi_v7` requires at least `v14.12.0`, this is the **default** (if no flag is given)
+- `napi_v7` supported by all [actively maintained](https://nodejs.org/en/about/releases/) NodeJS releases
+- `napi_v8` requires at least `15.12.0`, this is the **default** (if no flag is given) 
 - the experimental N-API features may be enabled via feature flag `experimental` (*off* by default)
 
 Updates
