@@ -1,3 +1,13 @@
+# Node v17.2.0
+
+affected files:
+* [src/js_native_api.h](https://github.com/nodejs/node/blob/v17.2.0/src/js_native_api.h)
+
+upstream changelog:
+* [88b57bc9d3](https://github.com/nodejs/node/commit/88b57bc9d3bab7998c3de0aa787b88233cf46ed4) src,doc: add SyntaxError napi support
+* [d15475578a](https://github.com/nodejs/node/commit/d15475578abfcc7e0a420719b8d55a6b3ab4f198) node-api: define version 8
+* [ad3ebed046](https://github.com/nodejs/node/commit/ad3ebed046ef457530b046f2a62313a7e16b7e29) node-api: allow retrieval of add-on file name
+
 # Node v15.12.0
 
 affected files:
