@@ -40,8 +40,8 @@ fn main() {
         .set_experimental()
         .set_napi_version()
         .header("node/src/node_api.h")
-        .whitelist_function("napi_.*")
-        .whitelist_type("napi_.*")
+        .allowlist_function("napi_.*")
+        .allowlist_type("napi_.*")
         .default_enum_style(EnumVariation::Rust {
             non_exhaustive: false,
         })
