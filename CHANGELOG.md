@@ -1,3 +1,17 @@
+# Node v18.10.0
+affected files:
+* [src/js_native_api.h](https://github.com/nodejs/node/blob/v18.10.0/src/js_native_api.h)
+* [src/js_native_api_types.h](https://github.com/nodejs/node/blob/v18.10.0/src/js_native_api_types.h)
+* [src/node_api.h](https://github.com/nodejs/node/blob/v18.10.0/src/node_api.h)
+* [src/node_api_types.h](https://github.com/nodejs/node/blob/v18.10.0/src/node_api_types.h)
+\nupstream changelog:
+* [ab73cc8706](https://github.com/nodejs/node/commit/ab73cc8706b0fc5716d3b798d86a732edd5972a1) src: disambiguate terms used to refer to builtins and addons
+* [037ff3da6d](https://github.com/nodejs/node/commit/037ff3da6d65954e3d3106b40a84d50851c1fbfb) node-api: explicitly set __cdecl for API functions
+* [44fdf953ba](https://github.com/nodejs/node/commit/44fdf953ba435a46a3525bc877069044a3157e7d) node-api,src: fix module registration in MSVC C++
+* [718be08686](https://github.com/nodejs/node/commit/718be08686312d19645861b9715491a49ee3c9cb) node-api: format Node-API related code
+* [726711fe4e](https://github.com/nodejs/node/commit/726711fe4e2de7992b2ecc6921d3b083be41f950) node-api: add node_api_symbol_for()
+* [4265f2769b](https://github.com/nodejs/node/commit/4265f2769bf91c0edb002da675fce98bbf61de04) src,doc: add SyntaxError napi support
+
 # Node v17.2.0
 
 affected files:
