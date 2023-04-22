@@ -1,3 +1,9 @@
+# Node v19.9.0\n
+affected files:
+* [src/node_api.h](https://github.com/nodejs/node/blob/v19.9.0/src/node_api.h)
+\nupstream changelog:
+* [ca981be2b9](https://github.com/nodejs/node/commit/ca981be2b9c4797af1a00c2ec74d51c4f2fac4b2) node-api: deprecate napi_module_register
+
 # Node v19.8.0\n
 affected files:
 * [src/node_api.h](https://github.com/nodejs/node/blob/v19.8.0/src/node_api.h)
