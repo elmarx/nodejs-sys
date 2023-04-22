@@ -1,3 +1,9 @@
+# Node v19.5.0\n
+affected files:
+* [src/js_native_api.h](https://github.com/nodejs/node/blob/v19.5.0/src/js_native_api.h)
+\nupstream changelog:
+* [bd98e5baba](https://github.com/nodejs/node/commit/bd98e5baba78b2fb0b3eb02f6468a4f2090363da) node-api: disambiguate napi_add_finalizer
+
 # Node v19.2.0\n
 affected files:
 * [src/node_api.h](https://github.com/nodejs/node/blob/v19.2.0/src/node_api.h)
