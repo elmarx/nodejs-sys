@@ -1,3 +1,9 @@
+# Node v19.8.0\n
+affected files:
+* [src/node_api.h](https://github.com/nodejs/node/blob/v19.8.0/src/node_api.h)
+\nupstream changelog:
+* [58b1f33bd7](https://github.com/nodejs/node/commit/58b1f33bd7ac5a71b791e7f180de7d77084fb008) node-api: add __wasm32__ guards on async works
+
 # Node v19.5.0\n
 affected files:
 * [src/js_native_api.h](https://github.com/nodejs/node/blob/v19.5.0/src/js_native_api.h)
