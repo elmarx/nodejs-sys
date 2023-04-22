@@ -1,3 +1,10 @@
+# Node v19.2.0\n
+affected files:
+* [src/node_api.h](https://github.com/nodejs/node/blob/v19.2.0/src/node_api.h)
+* [src/node_api_types.h](https://github.com/nodejs/node/blob/v19.2.0/src/node_api_types.h)
+\nupstream changelog:
+* [4a4f2802ec](https://github.com/nodejs/node/commit/4a4f2802ec4cb22a111363ea027ebb9be4bc8f6b) node-api: declare type napi_cleanup_hook
+
 # Node v19.1.0\n
 affected files:
 * [src/js_native_api.h](https://github.com/nodejs/node/blob/v19.1.0/src/js_native_api.h)
