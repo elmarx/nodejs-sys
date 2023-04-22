@@ -5,7 +5,7 @@ set -o nounset
 
 cd node
 git fetch
-MOST_RECENT_VERSION=$(git tag | sort -V | tail -n 1 )
+MOST_RECENT_VERSION=${1:-$(git tag | sort -V | tail -n 1 )}
 CURRENT_VERSION=$(git describe --tags HEAD)
 
 if [ "$MOST_RECENT_VERSION" = "$CURRENT_VERSION" ]; then
