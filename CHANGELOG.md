@@ -1,3 +1,13 @@
+# Node v19.1.0\n
+affected files:
+* [src/js_native_api.h](https://github.com/nodejs/node/blob/v19.1.0/src/js_native_api.h)
+* [src/js_native_api_types.h](https://github.com/nodejs/node/blob/v19.1.0/src/js_native_api_types.h)
+* [src/node_api.h](https://github.com/nodejs/node/blob/v19.1.0/src/node_api.h)
+\nupstream changelog:
+* [aaca54c5c0](https://github.com/nodejs/node/commit/aaca54c5c0093353afb5fbaf998014dd7e7dab3c) node-api: handle no support for external buffers
+* [472edc775d](https://github.com/nodejs/node/commit/472edc775d683aed2d9ed39ca7cf381f3e7e3ce2) src: disambiguate terms used to refer to builtins and addons
+* [fb744749e2](https://github.com/nodejs/node/commit/fb744749e204c349f76df79b3c513c7e0df7e4c6) node-api: explicitly set __cdecl for API functions
+
 # Node v18.10.0
 affected files:
 * [src/js_native_api.h](https://github.com/nodejs/node/blob/v18.10.0/src/js_native_api.h)
