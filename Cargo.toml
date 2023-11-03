@@ -22,7 +22,7 @@ readme = "README.md"
 [dependencies]
 
 [build-dependencies]
-bindgen = "0.66.1"
+bindgen = "0.69.1"
 
 [features]
 # no features by default
